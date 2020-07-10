@@ -1,0 +1,17 @@
+{
+  "code_file": "cln-tweet-sentiment-roberta-pytorch.ipynb",
+  "competition_sources": [
+    "tweet-sentiment-extraction"
+  ],
+  "dataset_sources": [
+    "abhishek/roberta-base"
+  ],
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "id": "marcogorelli/cln-tweet-sentiment-roberta-pytorch",
+  "is_private": "true",
+  "kernel_sources": [],
+  "kernel_type": "notebook",
+  "language": "python",
+  "title": "CLN - Tweet Sentiment RoBERTa PyTorch"
+}
