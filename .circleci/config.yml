@@ -21,4 +21,5 @@ jobs:
       - run:
           name: Deploy to Kaggle
           command: |
+            . venv/bin/activate
             kaggle competitions list
