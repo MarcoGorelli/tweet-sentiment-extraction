@@ -7,7 +7,7 @@
     "abhishek/roberta-base"
   ],
   "enable_gpu": "true",
-  "enable_internet": "true",
+  "enable_internet": "false",
   "id": "marcogorelli/cln-tweet-sentiment-roberta-pytorch",
   "is_private": "true",
   "kernel_sources": [],
