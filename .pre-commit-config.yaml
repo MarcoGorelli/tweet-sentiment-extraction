@@ -27,10 +27,3 @@ repos:
     rev: v0.782
     hooks:
     - id: mypy
-  - repo: local
-    hooks:
-    - id: to_notebook
-      name: to_notebook
-      language: script
-      entry: to_notebook.sh
-      args: ['']
