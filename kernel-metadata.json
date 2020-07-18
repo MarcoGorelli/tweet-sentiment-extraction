@@ -9,7 +9,7 @@
   "enable_gpu": "true",
   "enable_internet": "false",
   "id": "marcogorelli/cln-tweet-sentiment-roberta-pytorch",
-  "is_private": "true",
+  "is_private": "false",
   "kernel_sources": [],
   "kernel_type": "notebook",
   "language": "python",

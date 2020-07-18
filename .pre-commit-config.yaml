@@ -27,3 +27,8 @@ repos:
     rev: v0.782
     hooks:
     - id: mypy
+  - repo: https://github.com/MarcoGorelli/nbQA
+    rev: master
+    hooks:
+    - id: nbqa
+      args: ['black', '-l=96']
