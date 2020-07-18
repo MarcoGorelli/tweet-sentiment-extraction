@@ -1,3 +1,3 @@
 #!/bin/bash
 
-kaggle kernels push
+kaggle kernels push --help
