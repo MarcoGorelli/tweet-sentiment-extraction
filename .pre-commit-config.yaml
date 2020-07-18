@@ -33,4 +33,4 @@ repos:
       name: push-to-kaggle
       language: script
       entry: push_nb_to_kaggle.sh
-      stages: ['push']
+      stages: [push]
