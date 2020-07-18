@@ -1,0 +1,15 @@
+{
+  "context": ".",
+  "dockerFile": "Dockerfile",
+  "extensions": [
+    "ms-python.python"
+  ],
+  "name": "kaggle",
+  "runArgs": [
+    "--runtime=nvidia"
+  ],
+  "settings": {
+    "python.pythonPath": "/opt/conda/bin/python",
+    "terminal.integrated.shell.linux": "/bin/bash"
+  }
+}
