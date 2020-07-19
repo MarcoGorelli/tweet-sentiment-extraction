@@ -1,34 +1,49 @@
 # black-nb, nbstripout, flake8-nb
 repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.1.0
-    hooks:
-    - id: check-json
-    - id: pretty-format-json
-      args: ['--autofix']
-    - id: end-of-file-fixer
-    - id: requirements-txt-fixer
-    - id: check-yaml
-    - id: trailing-whitespace
-    - id: debug-statements
-  - repo: https://github.com/psf/black
-    rev: 19.10b0
-    hooks:
-    - id: black
-  - repo: https://github.com/timothycrosley/isort
-    rev: 5.0.9
-    hooks:
-    - id: isort
-  - repo: https://github.com/PyCQA/flake8
-    rev: 3.8.3
-    hooks:
-    - id: flake8
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.782
-    hooks:
-    - id: mypy
-  - repo: https://github.com/MarcoGorelli/nbQA
+  # - repo: https://github.com/pre-commit/pre-commit-hooks
+  #   rev: v3.1.0
+  #   hooks:
+  #   - id: check-json
+  #   - id: pretty-format-json
+  #     args: ['--autofix']
+  #   - id: end-of-file-fixer
+  #   - id: requirements-txt-fixer
+  #   - id: check-yaml
+  #   - id: trailing-whitespace
+  #   - id: debug-statements
+  # - repo: https://github.com/psf/black
+  #   rev: 19.10b0
+  #   hooks:
+  #   - id: black
+  # - repo: https://github.com/timothycrosley/isort
+  #   rev: 5.0.9
+  #   hooks:
+  #   - id: isort
+  # - repo: https://github.com/PyCQA/flake8
+  #   rev: 3.8.3
+  #   hooks:
+  #   - id: flake8
+  # - repo: https://github.com/pre-commit/mirrors-mypy
+  #   rev: v0.782
+  #   hooks:
+  #   - id: mypy
+  - repo: https://github.com/MarcoGorelli/nbQA-mirror-0
     rev: master
     hooks:
-    - id: nbqa
-      args: ['black', '-l=96']
+      - id: nbqa
+        args: ['black']
+  - repo: https://github.com/MarcoGorelli/nbQA-mirror-1
+    rev: master
+    hooks:
+      - id: nbqa
+        args: ['flake8']
+  - repo: https://github.com/MarcoGorelli/nbQA-mirror-2
+    rev: master
+    hooks:
+      - id: nbqa
+        args: ['isort']
+  - repo: https://github.com/MarcoGorelli/nbQA-mirror-3
+    rev: master
+    hooks:
+      - id: nbqa
+        args: ['pytest', '--doctest-modules']
