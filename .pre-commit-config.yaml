@@ -32,18 +32,36 @@ repos:
     hooks:
       - id: nbqa
         args: ['black']
+        name: nbqa-black
   - repo: https://github.com/MarcoGorelli/nbQA-mirror-1
     rev: master
     hooks:
       - id: nbqa
         args: ['flake8']
+        name: nbqa-flake8
   - repo: https://github.com/MarcoGorelli/nbQA-mirror-2
     rev: master
     hooks:
       - id: nbqa
         args: ['isort']
+        name: nbqa-isort
   - repo: https://github.com/MarcoGorelli/nbQA-mirror-3
     rev: master
     hooks:
       - id: nbqa
         args: ['pytest', '--doctest-modules']
+        name: nbqa-pytest
+        stages: [push]
+  - repo: https://github.com/MarcoGorelli/nbQA-mirror-4
+    rev: master
+    hooks:
+      - id: nbqa
+        args: ['blackdoc']
+        name: nbqa-blackdoc
+  - repo: https://github.com/MarcoGorelli/nbQA-mirror-5
+    rev: master
+    hooks:
+      - id: nbqa
+        args: ['mypy', '--ignore-missing-imports']
+        name: nbqa-mypy
+    
