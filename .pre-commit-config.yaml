@@ -27,40 +27,31 @@ repos:
     rev: v0.782
     hooks:
     - id: mypy
-  - repo: https://github.com/MarcoGorelli/nbQA-mirror-0
-    rev: 0.1.7
+  - repo: https://github.com/MarcoGorelli/nbQA
+    rev: 0.1.10
     hooks:
       - id: nbqa
         args: ['black']
         name: nbqa-black
-  - repo: https://github.com/MarcoGorelli/nbQA-mirror-1
-    rev: 0.1.7
-    hooks:
+        additional_dependencies: ['black']
       - id: nbqa
         args: ['flake8']
         name: nbqa-flake8
-  - repo: https://github.com/MarcoGorelli/nbQA-mirror-2
-    rev: 0.1.7
-    hooks:
+        additional_dependencies: ['flake8']
       - id: nbqa
         args: ['isort']
         name: nbqa-isort
-  - repo: https://github.com/MarcoGorelli/nbQA-mirror-3
-    rev: 0.1.7
-    hooks:
+        additional_dependencies: ['isort']
       - id: nbqa
         args: ['pytest', '--doctest-modules']
         name: nbqa-pytest
         stages: [push]
-  - repo: https://github.com/MarcoGorelli/nbQA-mirror-4
-    rev: 0.1.7
-    hooks:
+        additional_dependencies: ['pytest']
       - id: nbqa
         args: ['blackdoc']
         name: nbqa-blackdoc
-  - repo: https://github.com/MarcoGorelli/nbQA-mirror-5
-    rev: 0.1.7
-    hooks:
+        additional_dependencies: ['blackdoc']
       - id: nbqa
         args: ['mypy']
         name: nbqa-mypy
+        additional_dependencies: ['mypy']
