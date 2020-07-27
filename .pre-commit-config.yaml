@@ -55,3 +55,7 @@ repos:
         args: ['mypy']
         name: nbqa-mypy
         additional_dependencies: ['mypy']
+      - id: nbqa
+        args: ['pydocstyle']
+        name: nbqa-pydocstyle
+        additional_dependencies: ['pydocstyle']

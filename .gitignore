@@ -1,3 +1,5 @@
 .ipynb_checkpoints
 merges.txt
 vocab.json
+submission.csv
+*.pth
